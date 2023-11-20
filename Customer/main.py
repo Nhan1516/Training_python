@@ -46,48 +46,5 @@ async def create_item(name, phone, barcode):
 @app.get('/sev-customer')
 async def sever_customer():
     return {'Đang phục vụ khách hàng': quue_customer.seve_customer()}
-#Khởi tạo hàng đợi
-# def init(queue, q):
-#     q.elements = {}
-#     q.front = -1
-
-#Kiểm tra hàng đợi trống
-# def is_element(queue, q):
-#     return len(q.element) == 0
-
-# #trả về phần tử đầu hàng đợi
-# def get_front(queue, q):
-#     if len(q.element) == 0:
-#         return ('Hàng đợi rỗng')
-#     else:
-#         return q.elememt[q.front]
-
-# #thêm phẩn tử vào hàng đợi
-# #Thêm mới khách hàng
-# # @app.post("/customers")
-# # async def create_customer(item: Customer):
-# #     userName = item.name
-# #     user_customer[userName] = item.dict()
-# #     return userName
-# @app.post("/customers")
-# def add_to_queue(queue, q, customer: Customer):
-#     userName = customer.name
-#     #user_customer[userName] = customer.dict()
-#     q.elements[user_customer] = customer.dict()
-#     return userName
-
-# #Xoá phần tử khỏi hàng đợi
-# def delete_from_queue(queue, q):
-#     if len(q.element) == 0:
-#         return ('Hàng đợi rỗng')
-#     else:
-#         del q.elements[q.front] 
-
-
-# #Lấy danh sách khách hàng
-# @app.get('/customers')
-# async def get_customer():
-#     user = user_customer
-#     return user
 
 
